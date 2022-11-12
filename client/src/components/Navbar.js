@@ -17,9 +17,9 @@ export default function Navbar() {
       const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed)
 
     return (
-<nav className="navbar navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm mb-3">
+<nav className="navbar navbarCustom navbar-expand-lg bg-white sticky-top navbar-light p-3 shadow-sm mb-3">
   <div className="container-fluid">
-    <a className="navbar-brand" href="/"><i className="fa-solid fa-shop me-2"></i> <strong>Lucas Faustman Boutique</strong></a>
+    <a className="navbar-brand" href="/"><i className="fa-solid fa-plane-departure me-2"></i> <strong>Travel Buddi</strong></a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded={!isNavCollapsed ? true : false} onClick={handleNavCollapse} aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>

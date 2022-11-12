@@ -11,7 +11,6 @@ import ProductDetail from './pages/ProductDetail'
 import Payment from './pages/Payment'
 import Completion from './pages/Completion';
 // components
-import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 
 
@@ -39,7 +38,7 @@ function App() {
       <BrowserRouter>
       <ScrollToTop />
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='/' element={<Home products={products}/> } />
           <Route path='/shop' element={<Shop products={products} />} />
           <Route path="/shop/:productId" element={<ProductDetail products={products}/>}/>
           <Route path='/cart' element={<Cart />} />
@@ -47,7 +46,6 @@ function App() {
           <Route path='/completion' element={<Completion />} />
         </Routes>
       </BrowserRouter>
-      <Footer />
     </div>
   );
 }

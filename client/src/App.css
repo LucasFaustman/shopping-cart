@@ -11742,3 +11742,7 @@ ul {
   list-style: none;
   padding-left: 0;
 }
+
+.svg-product-feature {
+  width: 2em; height:2em
+}
