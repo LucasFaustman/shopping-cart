@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import {addToCart} from '../redux/cart/cartSlice';
+import Navbar from "../components/Navbar"
+
 
 
 
@@ -27,6 +29,7 @@ export default function Shop({products}) {
     })
     return (
         <div>
+            <Navbar />
             <div className="container-fluid">
             <h2>Shop Our Collection</h2>
                 <div className="row">

@@ -2,6 +2,8 @@ import { useSelector } from 'react-redux'
 import { incrementQuantity, decrementQuantity, removeItem} from '../redux/cart/cartSlice'
 import { useDispatch } from 'react-redux'
 import Total from "../components/Total"
+import Navbar from "../components/Navbar"
+
 
 export default function Cart() {
     const cart = useSelector((state) => state.cart)
@@ -31,6 +33,7 @@ export default function Cart() {
     })
     return (
         <div>
+            <Navbar />
             {cart.length 
             ? 
                 <div className="container mt-5 mb-5">

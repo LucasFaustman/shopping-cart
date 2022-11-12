@@ -11737,3 +11737,8 @@ footer a:hover, footer a:active, footer a:focus {
 .product-details {
   width: 20%
 }
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}

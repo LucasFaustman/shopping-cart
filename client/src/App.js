@@ -12,7 +12,6 @@ import Payment from './pages/Payment'
 import Completion from './pages/Completion';
 // components
 import Footer from './components/Footer';
-import Navbar from './components/Navbar';
 import ScrollToTop from './components/ScrollToTop';
 
 
@@ -37,7 +36,6 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
       <BrowserRouter>
       <ScrollToTop />
         <Routes>

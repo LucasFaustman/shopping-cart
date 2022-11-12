@@ -1,6 +1,8 @@
 import {useParams} from "react-router-dom"
 import { useDispatch } from 'react-redux';
 import {addToCart} from '../redux/cart/cartSlice';
+import Navbar from "../components/Navbar"
+
 
 
 export default function Home({products}) {
@@ -12,6 +14,7 @@ export default function Home({products}) {
 
     return (
         <div>
+            <Navbar />
             {thisProduct &&  <section className="d-flex flex-wrap pt-0">
                 <section className="col-md-4 ">
                     <img className="img-fluid center-block " src={`${thisProduct.image.url}`} alt={`${thisProduct.name}`}/>
