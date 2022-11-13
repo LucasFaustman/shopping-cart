@@ -26,6 +26,12 @@ const calculateOrderAmount = (cart) => {
 
 app.use(express.static(path.join(__dirname, 'build')));
 
+app.get("/config", (req,res) => {
+    res.send({
+        publishableKey: process.env.PUBLIC_STRIPE_PUBLISHABLE_KEY
+    })
+})
+
 app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build", "index.html"), err => {
       if (err) {
@@ -34,13 +40,8 @@ app.get("/*", (req, res) => {
   });
 });
 
-app.get("/config", (req,res) => {
-    res.send({
-        publishableKey: process.env.PUBLIC_STRIPE_PUBLISHABLE_KEY
-    })
-})
-
 app.post("/create-payment-intent", async (req, res) => {
+  console.log(req)
   const cart = req.body;
 
 try{  // Create a PaymentIntent with the order amount and currency
