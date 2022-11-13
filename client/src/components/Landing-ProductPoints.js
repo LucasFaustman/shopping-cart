@@ -9,7 +9,7 @@ export default function ProductPoints() {
 						   <div className="media-icon flex-shrink-0"><img src="assets/images/streamline-icons/like-1-white.svg" alt=""/></div>
 						   <div className="media-body flex-grow-1 ms-3">
 							   <h4 className="heading text-white">100% Quality Guarantee</h4>
-							   <div className="desc text-white">TWe offer a 100% quality guarantee on all our products.</div>
+							   <div className="desc text-white">We offer a 100% quality guarantee on all our products.</div>
 						   </div>
 					   </div>
 				    </div>

@@ -14,13 +14,12 @@ export default function CheckoutForm() {
 
   const CartItems = cart.map(item => {
     
-    return   <Link to={`/shop/${item.id}`}>
-     <div key={item.id} className="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
+    return   <div key={item.id} className="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
     <div className="mr-1">
         <img className="rounded" src={`${item.image}`} alt={`${item.title}`} width="70"/>
     </div>
     <div className="d-flex flex-column align-items-center product-details">
-        <span className="font-weight-bold">{item.title}</span>
+    <Link to={`/shop/${item.id}`}>  <span className="font-weight-bold">{item.title}</span>  </Link>
     </div>
     <div>
         <h5 className="text-grey">${item.price}</h5>
@@ -29,7 +28,7 @@ export default function CheckoutForm() {
         <h5 className="text-grey">Qty: {item.quantity}</h5>
     </div>
 </div>
-</Link>
+
   })
 
   const stripe = useStripe();

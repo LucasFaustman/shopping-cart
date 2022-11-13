@@ -9,9 +9,6 @@ import Footer from "../components/Footer";
 
 export default function Shop({products}) {
     const dispatch = useDispatch()
-
-    console.log(products)
-
     const productList = products.map(item => {
         return  <div className="card col-md-4 gx-5 gy-5" key={item.sku}>
                 <Link to={`/shop/${item.sku}`}>

@@ -54,4 +54,4 @@ try{  // Create a PaymentIntent with the order amount and currency
   }
 });
 
-app.listen(PORT, () => console.log(`Listing on Port ${PORT}`));
+app.listen(PORT, () => console.log(`Listening on Port ${PORT}`));
