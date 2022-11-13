@@ -24,6 +24,12 @@ const calculateOrderAmount = (cart) => {
   return totalPrice.toFixed(2).split('.').join('')
 };
 
+app.use(express.static(path.join(__dirname, 'build')));
+
+app.get('/*', function(req,res) {
+        res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
 app.get("/config", (req,res) => {
     res.send({
         publishableKey: process.env.PUBLIC_STRIPE_PUBLISHABLE_KEY
