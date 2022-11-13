@@ -26,8 +26,12 @@ const calculateOrderAmount = (cart) => {
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/*', function(req,res) {
-        res.sendFile(path.join(__dirname, 'build', 'index.html'));
+app.get("/*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build", "index.html"), err => {
+      if (err) {
+          console.log(err);
+      }
+  });
 });
 
 app.get("/config", (req,res) => {
