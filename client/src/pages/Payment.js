@@ -24,7 +24,7 @@ function Payment() {
     }).then(async (result) => {
       var { clientSecret } = await result.json();
       setClientSecret(clientSecret);
-    }).catch(err => console.log(err)) 
+    });
   }, [cart]);
 
   return (

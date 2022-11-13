@@ -53,7 +53,7 @@ try{  // Create a PaymentIntent with the order amount and currency
   });
 
   res.send({
-    clientSecret: paymentIntent.client_secret,
+    clientSecret: paymentIntent.client_secret
   });
 } 
   
