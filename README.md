@@ -4,6 +4,8 @@ Browse your favourite travel products on Travel Buddi! Add items to your cart an
 
 Link to project: https://travel-buddi.onrender.com
 
+<img src="https://media.giphy.com/media/jxdgLNPxVaZlLSuL2L/giphy.gif" alt="travel-buddi-overview" height="100%" />
+
 ## How It's Made:
 
 **Tech used:**
