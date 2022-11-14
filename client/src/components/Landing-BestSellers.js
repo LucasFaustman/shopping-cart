@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 
 export default function BestSellers({products}) {
-    console.log(products)
     const productList = products.slice(0,3).map(item => {
         return <div className="col-md-3 gx-5 gy-5" key={item.sku}>
              <Link to={`/shop/${item.sku}`}>

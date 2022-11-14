@@ -41,7 +41,6 @@ app.get("/*", (req, res) => {
 });
 
 app.post("/create-payment-intent", async (req, res) => {
-  console.log(req)
   const cart = req.body;
 
 try{  // Create a PaymentIntent with the order amount and currency
