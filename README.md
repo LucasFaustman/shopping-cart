@@ -21,6 +21,8 @@ I was able to get the opportunity to go deeper on React Redux and persist in ord
 
 - Add testing
 
+- A search field in the shop section
+
 ## Lessons Learned:
 
 I originally created this project as a simple state exercise. However, I went deeper on React Router Dom as well as integrating Stripe checkout. Here is a link to my first iteration: https://lucas-faustman-boutique.netlify.app/
