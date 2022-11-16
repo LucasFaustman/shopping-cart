@@ -9,7 +9,7 @@ Link to project: https://travel-buddi.onrender.com
 ## How It's Made:
 
 **Tech used:**
-Tech used: CSS, React
+Tech used: Bootstrap, CSS, React, Redux, Stripe API
 
 I was able to get the opportunity to go deeper on React Redux and persist in order to save products to a global state cart. I was also able to work with Stripe to checkout users securely.
 
